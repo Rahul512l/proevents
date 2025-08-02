@@ -7,51 +7,54 @@
 }
 
 body {
-  background-color: #fdfdfd;
-  color: #333;
+  background-color: #1a1a1a;
+  color: #eeeeee;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #111;
-  color: #fff;
-  padding: 2rem 1rem;
+  background: #000;
+  padding: 3rem 1rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px dashed #F28C28;
 }
 
 header h1 {
+  color: #ffffff;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 header p {
+  color: #bbbbbb;
   font-size: 1.1rem;
-  color: #ccc;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  background-color: #222;
+  background: #111;
   padding: 1rem;
+  gap: 1.5rem;
+  border-bottom: 1px solid #333;
 }
 
 nav a {
-  color: #fff;
+  color: #eeeeee;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #e91e63;
+  color: #F28C28;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .section {
@@ -59,35 +62,61 @@ nav a:hover {
 }
 
 .section h2 {
-  color: #e91e63;
-  font-size: 2rem;
+  color: #F28C28;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  border-left: 5px solid #F28C28;
+  padding-left: 0.8rem;
 }
 
 .section p,
 .section ul {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 footer {
-  background-color: #f3f3f3;
-  padding: 1.5rem 1rem;
+  background: #111;
+  color: #999;
   text-align: center;
+  padding: 1.5rem 1rem;
   font-size: 0.9rem;
-  color: #555;
-  border-top: 1px solid #ddd;
+  border-top: 1px dashed #F28C28;
 }
 
 .highlight {
   font-weight: 600;
-  color: #000;
+  color: #F28C28;
 }
 
 a {
-  color: #e91e63;
+  color: #F28C28;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
 }
